@@ -49,6 +49,7 @@ header {
 	background-image: url("sunset.jpg");
 	background-size: 100% 100%;	
 	color: #FFFFFF;
+	grid-area: header;
 }
 
 body {
@@ -59,15 +60,14 @@ body {
 
 nav {
 	background-color: #87c4e2;
-	width: 30%;
 	height: 100%;
-	float: left;
 	box-sizing: border-box;
+	grid-area: nav;
 }
 
 footer {
-	clear: both;
 	padding: 20px;
+	grid-area: footer
 }
 
 img {
@@ -79,15 +79,29 @@ img {
 /* specifying IDs of elements */
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing  box-sizing attribute */
 #content {
-	width: 70%;
 	padding: 20px;
-	float: left;
 	box-sizing: border-box;
+	grid-area: content;
 }
 
+/*
+Resources from learning about grid layout. This took the majority
+of my time and was quite tricky but ultimately seems to have
+been the most sensible approach.
+
+https://www.w3schools.com/css/css_grid.asp
+https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas
+
+*/
 #wrapper {
+	display: grid;
+	grid-template-columns: 30% 70%;      /* nav and content widths */
+	grid-template-rows: auto 1fr auto;   /* header, content area, footer */
+	grid-template-areas:
+		"header  header"
+		"nav     content"
+		"nav     footer";
 	width: 80%;
-	height: fit-content;
 	min-width: 600px;
 	background-color: white;
 	margin-left: 10%;
