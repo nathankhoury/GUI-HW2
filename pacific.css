@@ -1,0 +1,63 @@
+header, hgroup, nav, footer, figure, figcaption, aside, section, article {
+	display: block;
+}
+body {
+	background-color: ;
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+nav ul {
+	font-size: 1.2em;
+	list-style-type: none;
+}
+
+nav a:link {
+	color: #042263;	
+	text-decoration: none;
+	font-weight: bold;
+}
+
+nav a:visited {
+	color: #344873;
+}
+nav a:hover {
+	color: #FFFFFF;
+}
+h1 {
+	margin-bottom: 0;
+	padding: 10px;
+}
+h2 {
+	color: #3399CC;
+}
+h1,
+h2 {
+	font-family: Georgia, "Times New Roman", serif;
+}
+#contact {
+	font-size: 90%;
+}
+dt {
+	color: #000033;
+}
+footer {
+	font-family: Georgia, "Times New Roman", serif;
+}
+/* new tags that I selected which were not part of the starter code */
+header {
+	background-image: url("sunset.jpg");
+	background-size: 100% 100%;	
+	width: 80%;
+	color: #FFFFFF;
+}
+
+body {
+	background-image: url("ptrbackground.jpg")
+}
+
+nav {
+	background-color: #87c4e2;
+}
+
+/* specifying IDs of elements */
