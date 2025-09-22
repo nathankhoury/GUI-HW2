@@ -2,7 +2,6 @@ header, hgroup, nav, footer, figure, figcaption, aside, section, article {
 	display: block;
 }
 body {
-	background-color: ;
 	color: #666666;
 	font-family: Arial, Helvetica, sans-serif;
 }
@@ -43,21 +42,54 @@ dt {
 }
 footer {
 	font-family: Georgia, "Times New Roman", serif;
+	
 }
 /* new tags that I selected which were not part of the starter code */
 header {
 	background-image: url("sunset.jpg");
 	background-size: 100% 100%;	
-	width: 80%;
 	color: #FFFFFF;
 }
 
 body {
-	background-image: url("ptrbackground.jpg")
+	background-image: url("ptrbackground.jpg");
+	background-repeat: repeat-x;
+	background-color: #00569f;
 }
 
 nav {
 	background-color: #87c4e2;
+	width: 30%;
+	height: 100%;
+	float: left;
+	box-sizing: border-box;
+}
+
+footer {
+	clear: both;
+	padding: 20px;
+}
+
+img {
+	float: left;
+	margin-right: 40px;
+	margin-bottom: 40px;
 }
 
 /* specifying IDs of elements */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing  box-sizing attribute */
+#content {
+	width: 70%;
+	padding: 20px;
+	float: left;
+	box-sizing: border-box;
+}
+
+#wrapper {
+	width: 80%;
+	height: fit-content;
+	min-width: 600px;
+	background-color: white;
+	margin-left: 10%;
+	margin-right: 10%;
+}
