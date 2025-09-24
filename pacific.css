@@ -30,8 +30,8 @@ h1 {
 h2 {
 	color: #3399CC;
 }
-h1,
-h2 {
+
+h1, h2 {
 	font-family: Georgia, "Times New Roman", serif;
 }
 
@@ -58,8 +58,8 @@ body {
 
 nav {
 	background-color: #87c4e2;
-	height: 100%;
 	box-sizing: border-box;
+	height: 100%;
 	grid-area: nav;
 }
 
@@ -92,8 +92,8 @@ img {
 /* https://www.w3schools.com/cssref/pr_list-style-position.php */
 #content > ul {
 	list-style-image: url("marker.gif");
+	list-style-position: inside;
 	margin: 20px;
-	list-style-position: inside;;
 }
 
 #contact {
@@ -105,7 +105,7 @@ Resources from learning about grid layout. This took the majority
 of my time and was quite tricky but ultimately seems to have
 been the most sensible approach.
 
-https://www.w3schools.com/css/css_grid.asp
+https://www.w3schools.comaaaaa/css/css_grid.asp
 https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas
 
 */
@@ -113,7 +113,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas
 	display: grid;
 	grid-template-columns: 30% 70%;      /* nav and content widths */
 	grid-template-rows: auto 1fr auto;   /* header, content area, footer */
-	grid-template-areas:
+	grid-template-areas:				 /* 2d array formatting of elements */
 		"header  header"
 		"nav     content"
 		"nav     footer";
@@ -123,13 +123,3 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas
 	margin-left: 10%;
 	margin-right: 10%;
 }
-
-/*
-TODO: 
-	- refactor
-	- reorganize
-	- remove redundancies
-	- documentation
-	- finish adding features (emphasized text, bullet pt images, etc.)
-	- double check required features
-*/
