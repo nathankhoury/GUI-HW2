@@ -6,7 +6,7 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-nav ul {
+nav > ul {
 	font-size: 1.2em;
 	list-style-type: none;
 }
@@ -34,9 +34,7 @@ h1,
 h2 {
 	font-family: Georgia, "Times New Roman", serif;
 }
-#contact {
-	font-size: 90%;
-}
+
 dt {
 	color: #000033;
 }
@@ -44,7 +42,7 @@ footer {
 	font-family: Georgia, "Times New Roman", serif;
 	
 }
-/* new tags that I selected which were not part of the starter code */
+
 header {
 	background-image: url("sunset.jpg");
 	background-size: 100% 100%;	
@@ -66,14 +64,21 @@ nav {
 }
 
 footer {
+	font-style: italic;
 	padding: 20px;
-	grid-area: footer
+	grid-area: footer;
 }
 
 img {
 	float: left;
-	margin-right: 40px;
-	margin-bottom: 40px;
+	margin-right: 30px;
+	margin-bottom: 10px;
+}
+
+/* specifying classes of elements */
+.resort {
+	font-weight: bold;
+	color: #0f61a8;
 }
 
 /* specifying IDs of elements */
@@ -82,6 +87,17 @@ img {
 	padding: 20px;
 	box-sizing: border-box;
 	grid-area: content;
+}
+
+/* https://www.w3schools.com/cssref/pr_list-style-position.php */
+#content > ul {
+	list-style-image: url("marker.gif");
+	margin: 20px;
+	list-style-position: inside;;
+}
+
+#contact {
+	font-size: 90%;
 }
 
 /*
